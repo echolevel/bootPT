@@ -3,6 +3,19 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 ![bootPT screenshot](screenshot.png)
 
+## Changelog
+
+* v0.04 - new Protracker build based on 8bitbubsy's latest source (September 2019), and added some tiny intro code that displays an ASCII logo
+* v0.03 - realised add36k was causing problems, replaced it with add44k
+* v0.02 - fixed samples assign in PT-Config.00
+* v0.01 - initial commit
+
+## Usage
+
+Boot the Amiga with this image - tested on A1200 and A500, and should work on almost all others. If you're dropped back to an AmigaDOS screen after getting a 'disk not found' message while swapping floppy disks/images ( to save/load modules or samples), don't worry - Protracker probably hasn't crashed, just lost focus. Hit Left-Amiga + M on the keyboard to switch back to Protracker. Enjoy!
+
+## About
+
 This is just a bootable ADF file which can be used with an emulator such as WinUAE (Windows) or FS-UAE (MacOS), or with a GOTEK USB floppy emulator on real Amiga hardware. It's intended for maximum compatibility with OCS/ECS machines (A500, A500+, A600), but should also work fine on AGA machines.
 
 The startup-sequence first runs add36k, a tiny program that increases your available chipmem by removing one entire bitplane and shrinking the other to 50 pixels (written in 1992 by Alexander Rawass). Protracker can only address samples in chipmem since it uses the DMA to play back sampledata with almost no cost to the CPU. The disadvantage is that it's unable to access any fastram (RAM expansions, basically) you might have installed, limiting you to 512kb on a stock A500 or 2MB on a stock A1200, but lots of amazing tunes have been written within these limitations so don't get disheartened :D
