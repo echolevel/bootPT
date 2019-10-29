@@ -15,6 +15,10 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 Boot the Amiga with this image - tested on A1200 and A500, and should work on almost all others. If you're dropped back to an AmigaDOS screen after getting a 'disk not found' message while swapping floppy disks/images ( to save/load modules or samples), don't worry - Protracker probably hasn't crashed, just lost focus. Hit Left-Amiga + M on the keyboard to switch back to Protracker. Enjoy!
 
+## Documentation
+
+See the About section (below) for some more info about this ADF, but for general Protracker documentation I've done a quick [Markdown reformat of the original PT2.3d helpfile](2019_PT_HELPFILE.MD). It's built into Protracker, but it's sometimes difficult to navigate (and impossible to search through). I've added and annotated where appropriate, in reference to 2.3e and 2.3f changes, but it's an ongoing work in progress. Ultimately I'd like this to be a canonical repository of everything that's known about PT2.3d+ so please contribute if you think anything's missing!
+
 ## About
 
 This is just a bootable ADF file which can be used with an emulator such as WinUAE (Windows) or FS-UAE (MacOS), or with a GOTEK USB floppy emulator on real Amiga hardware. It's intended for maximum compatibility with OCS/ECS machines (A500, A500+, A600), but should also work fine on AGA machines.
