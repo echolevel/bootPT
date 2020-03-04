@@ -5,6 +5,7 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 ## Changelog
 
+* v0.08 - tweaked some graphics and fixed the config 
 * v0.07 - merged 8bitbubsy's fixes to a raw sample loading bug I discovered
 * v0.06 - new Protracker build based on 8bitbubsy's latest source (February 2020), and changed config references from DF0: to PTBOOT2.3F:, and finally updated About screen to reflect the 'F'
 * v0.05 - new Protracker build based on 8bitbubsy's latest source (October 2019), and added mod2smp.cli
