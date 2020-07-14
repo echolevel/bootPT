@@ -5,7 +5,8 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 ## Changelog
 
-* v0.08 - tweaked some graphics and fixed the config 
+* v0.09 - reported an A500/A500+/A600-only bug in PT2.3F to 8bitbubsy, then updated the bootPT version with his fix; added an LHA containing the executable and config file for hard drive users
+* v0.08 - tweaked some graphics and fixed the config
 * v0.07 - merged 8bitbubsy's fixes to a raw sample loading bug I discovered
 * v0.06 - new Protracker build based on 8bitbubsy's latest source (February 2020), and changed config references from DF0: to PTBOOT2.3F:, and finally updated About screen to reflect the 'F'
 * v0.05 - new Protracker build based on 8bitbubsy's latest source (October 2019), and added mod2smp.cli
@@ -17,6 +18,8 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 ## Usage
 
 Boot the Amiga with this image - tested on A1200 and A500, and should work on almost all others. If you're dropped back to an AmigaDOS screen after getting a 'disk not found' message while swapping floppy disks/images ( to save/load modules or samples), don't worry - Protracker probably hasn't crashed, just lost focus. Hit Left-Amiga + M on the keyboard to switch back to Protracker. Enjoy!
+
+If you want to use the bootPT version of ProTracker on a hard drive Workbench system rather than as a bootable image, you can find the executable and the default bootPT config file in [bootPT.lha](https://github.com/echolevel/bootPT/raw/master/bootPT.lha) (either on Amiga or on Mac/Windows/Linux with most unzip programs).
 
 ## Documentation
 
