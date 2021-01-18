@@ -5,6 +5,7 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 ## Changelog
 
+* v0.10 - fixed 128kb parallel port sampling in main branch and in bootPT custom build; updated bootPT image and LHA accordingly; updated PT version number in bootPT intro.
 * v0.09 - reported an A500/A500+/A600-only bug in PT2.3F to 8bitbubsy, then updated the bootPT version with his fix; added an LHA containing the executable and config file for hard drive users
 * v0.08 - tweaked some graphics and fixed the config
 * v0.07 - merged 8bitbubsy's fixes to a raw sample loading bug I discovered
