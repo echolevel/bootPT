@@ -5,6 +5,7 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 ## Changelog
 
+* v.0.11 - merged 8bitbubsy's fixes for a cut/copy mem allocation bug and a few quadrascope bugs. New default colour scheme. Some config path tweaks. Lots more stable on A1200; WAY more stable on A500/+/600.
 * v0.10 - fixed 128kb parallel port sampling in main branch and in bootPT custom build; updated bootPT image and LHA accordingly; updated PT version number in bootPT intro.
 * v0.09 - reported an A500/A500+/A600-only bug in PT2.3F to 8bitbubsy, then updated the bootPT version with his fix; added an LHA containing the executable and config file for hard drive users
 * v0.08 - tweaked some graphics and fixed the config
@@ -18,7 +19,7 @@ Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
 ## Usage
 
-Boot the Amiga with this image - tested on A1200 and A500, and should work on almost all others. If you're dropped back to an AmigaDOS screen after getting a 'disk not found' message while swapping floppy disks/images ( to save/load modules or samples), don't worry - Protracker probably hasn't crashed, just lost focus. Hit Left-Amiga + M on the keyboard to switch back to Protracker. Enjoy!
+Boot the Amiga with this image - it's tested on A500, A500+, A600 and A1200 (030 and stock), and should work on almost all others. If you're dropped back to an AmigaDOS screen after getting a 'disk not found' message while swapping floppy disks/images ( to save/load modules or samples), don't worry - Protracker probably hasn't crashed, just lost focus. Hit Left-Amiga + M on the keyboard to switch back to Protracker. Enjoy!
 
 If you want to use the bootPT version of ProTracker on a hard drive Workbench system rather than as a bootable image, you can find the executable and the default bootPT config file in [bootPT.lha](https://github.com/echolevel/bootPT/raw/master/bootPT.lha) (either on Amiga or on Mac/Windows/Linux with most unzip programs).
 
@@ -41,8 +42,9 @@ A few notes about the default config I've included:
 * AUTOEXIT is Off (so Disk Op stays open after you've loaded something, good if you're not sure which sample you want)
 * MOD. ONLY is Off (so you'll see all files when loading modules, not just those with the mod.prefix. Protracker doesn't care whether a MOD has a 'mod' prefix/suffix: it'll attempt to load anything you tell it to)
 * CUTTOBUFF is On (if you're on a stock A500, or have very limited chipmem for some other reason, you might want to disable this - it'll mean that any 'cut' operation while editing samples is destructive and final, but it might save you running out of memory)
-* AUTODIR is Off (this should stop PT from reading directories until you've typed Return in the path field, reducing time-consuming lockups when reading floppy disks containing lots of files, but it doesn't seem to be working...maybe a bug?)
 * The others you can look up in the 2019_PT_HELPFILE :)
+
+Note: the reason the ADF is called PTBOOT2.3F instead of BOOTPT2.3F is that PTBOOT2.3F is much easier to find in a huge alphabetically ordered USB drive of disk images, e.g. for use with a Gotek. Keeps your Protracker among the Ps!
 
 
 ### This version of Protracker
@@ -74,7 +76,7 @@ Here's some info about how you could expand your desktop wedge-style Amiga (I'm 
 
 | Amiga model | Stock Chip Mem | Chip Mem Limit | Fast/Slow Mem Options |
 | ------------ | ------------- | ----------|------------ |
-| A500 | 0.5MB (512KB) | 1MB with an ECS Agnus chip and motherboard mod | Extra 512kb 'slow' mem with trapdoor expansion; various accelerator and edge connector options, new and old |
+| A500 | 0.5MB (512KB) | 1MB with an ECS Agnus chip and motherboard mod | Cheap and easy: an extra 512kb 'slow' mem as a trapdoor expansion. Pricey and awkward: trapdoor expansion plus a Gary mod to use it as fast mem; fast mem as part of an edge connector accelerator; fast mem as part of a clip-on-CPU IDE interface|
 | A500+ | 1MB | 2MB with trapdoor expansion | Various accelerator and edge connector options, new and old |
 | A600 | 1MB | 2MB with trapdoor expansion | 4MB and 8MB fast mem expansions; more available with accelerators |
 | A1200 | 2MB | 2MB is all you're getting! | Trapdoor ram expansions (some include FPU), various accelerators |
