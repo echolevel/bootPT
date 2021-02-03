@@ -1,7 +1,7 @@
 # bootPT
 Bootable Amiga floppy disk image with Syphus' custom Protracker build
 
-![bootPT screenshot](screenshot.png)
+![bootPT screenshot](screenshot.jpg)
 
 ## Changelog
 
