@@ -25,7 +25,7 @@ If you want to use the bootPT version of ProTracker on a hard drive Workbench sy
 
 ## Documentation (Protracker Manual/Helpfile)
 
-See the About section (below) for some more info about this ADF and how to get it running, but for general Protracker documentation I've done a quick [Markdown reformat of the original PT2.3d helpfile](2019_PT_HELPFILE.md). It's built into Protracker, but it's sometimes difficult to navigate (and impossible to search through). I've added and annotated where appropriate, in reference to 2.3e and 2.3f changes, but it's an ongoing work in progress. Ultimately I'd like this to be a canonical repository of everything that's known about PT2.3d+ so please contribute if you think anything's missing!
+See the About section (below) for some more info about this ADF and how to get it running, but for general Protracker documentation I've done a quick [Markdown reformat of the original PT2.3D helpfile](https://github.com/echolevel/Protracker-2.3D-Helpfile-Manual). It's built into Protracker, but it's sometimes difficult to navigate (and impossible to search through). I've added and annotated where appropriate, in reference to 2.3e and 2.3f changes, but it's an ongoing work in progress. Ultimately I'd like this to be a canonical repository of everything that's known about PT2.3d+ so please contribute if you think anything's missing!
 
 ## About bootPT
 
@@ -56,6 +56,8 @@ Anyway, last night (19th October 2019) I decided to mess with the graphics asset
 I've also added the CLI version of mod2smp by Tomasz Muszynski (Hali/Union) which allows you to 'bounce' down sections of a module to flat sampledata, which you can then load right back into Protracker. This is great for using multiple Protracker tracks to create some complex pad chord, sting or polyphonic drum pattern, then converting it all to a single mono sample that only uses one track in your module. Like everything, it's a tradeoff between filesize, flexibility and quality. Type mod2smp.cli without any arguments to see its built-in help, which gives you instructions and examples.
 
 The only other thing to mention is that I added a folder of small chipsamples to the root of the disk, and set that folder as the default samples directory in Protracker's config. So it might be a fun way to get started with chiptracking on Amiga: just boot this image, maybe find some Protracker tutorials, and away you go!
+
+You can find the source for this custom fork [here](https://github.com/echolevel/pt23f-syphus); I try to keep it synched with 8bitbubsy's updates and bugfixes which (as of September 2022) still come along every so often.
 
 Cheers,
 
